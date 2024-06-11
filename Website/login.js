@@ -37,6 +37,7 @@ image.onclick = () => {
 
 let myButton = document.querySelector("#changeUser");
 let employeeButton = document.querySelector("#employeeLogin")
+let myHeading = document.querySelector("h1");
 
 let page = undefined;
 
@@ -51,6 +52,26 @@ employeeButton.onclick = () => {
 };
 
 
+function setUserName(){
+     const name = prompt('Enter your Username.');
+     if(!name){
+          setUserName();
+     }
+     else{
+          localStorage.setItem('name', name);
+          myHeading.textContent = `Welcome, ${name}`;
+     }
+}
+
+if(!localStorage.getItem('name')){
+     setUserName();
+}else{
+     const storedName = localStorage.getItem('name');
+     myHeading.textContent = `Good morning ${storedName}`;
+}
+myButton.onclick = () => {
+     setUserName();
+};
 
 
 
