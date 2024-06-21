@@ -1,3 +1,31 @@
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .info-box {
+    width: 48%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .info-box h2 {
+    color: #0077be;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+
 p{
     color: #ffff;
     font-size: 20px;
@@ -63,6 +91,34 @@ button:hover {
 } */
 
 
+/* CSS */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all ease-in 0.3s;
+    background: linear-gradient(180deg, #737373 0%, #D9D9D9 100%);
+}
+
+.box {
+    width: 183px;
+    height: 239px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
 .button-bar {
     display: flex;
     justify-content: center;
@@ -120,3 +176,47 @@ img{
     margin-top: 10px;
     font-size: 16px;
   }
+
+
+
+
+
+
+
+  footer {
+    background-color: #0085BA;
+    color: black;
+    padding: 20px 0;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    float: right;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info p {
+    margin: 0;
+  }
+  
