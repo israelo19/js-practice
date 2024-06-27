@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    bottom: 0;
+
   }
   
   .info-box {
@@ -11,18 +13,24 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    bottom: 0;
+
   }
   
   .info-box h2 {
     color: #0077be;
     margin-top: 0;
     margin-bottom: 10px;
+    bottom: 0;
+
   }
   
   .info-box p {
     font-size: 14px;
     line-height: 1.5;
     color: #333;
+    bottom: 0;
+
   }
 
 

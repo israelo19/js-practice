@@ -47,7 +47,7 @@ function redirect(page){
 }
 
 employeeButton.onclick = () => {
-     redirect("login.html");
+     redirect("/login.html");
 };
 
 
