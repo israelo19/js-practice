@@ -47,7 +47,9 @@ function redirect(page){
 }
 
 employeeButton.onclick = () => {
-     redirect("/login.html");
+     employeeButton.onclick = () => {
+          window.location.href = '/login.php';
+      };
 };
 
 
